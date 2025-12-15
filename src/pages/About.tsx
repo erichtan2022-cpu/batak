@@ -112,6 +112,49 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0D1A2A] mb-4">
+              {t('about.founders.title')}
+            </h2>
+            <p className="text-lg text-gray-600">
+              {t('about.founders.subtitle')}
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { name: 'Gustien Siagian', image: 'https://i.imgur.com/JprwCFw.png' },
+              { name: 'Riama Silitonga', image: 'https://i.imgur.com/tUDch9X.png' },
+              { name: 'Natalina Harianja', image: 'https://i.imgur.com/gATf5kO.png' },
+              { name: 'Risma Tambunan', image: 'https://i.imgur.com/SJdJKvs.png' },
+            ].map((founder, index) => (
+              <div
+                key={index}
+                className="group hover:transform hover:-translate-y-2 transition-all duration-300"
+              >
+                <div className="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300">
+                  <div className="aspect-square">
+                    <img
+                      src={founder.image}
+                      alt={founder.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D1A2A]/90 via-[#0D1A2A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 className="text-xl font-bold text-white drop-shadow-lg">
+                      {founder.name}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0D1A2A] mb-4">
               {t('about.values.title')}
             </h2>
             <p className="text-lg text-gray-600">

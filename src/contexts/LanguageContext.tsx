@@ -161,6 +161,16 @@ export const translations: Record<string, Record<Language, string>> = {
     id: 'Nilai Kami',
     en: 'Our Values',
   },
+  'about.founders.title': {
+    ba: 'Parjolo Ni Jita',
+    id: 'Pendiri Kami',
+    en: 'Our Founders',
+  },
+  'about.founders.subtitle': {
+    ba: 'Halak na mamulahkon hasangapon ni Tondi Ni Ianakhon',
+    id: 'Orang-orang yang memulai perjalanan Tondi Ni Ianakhon',
+    en: 'The people who started the journey of Tondi Ni Ianakhon',
+  },
   'impact.title': {
     ba: 'Dampak Jita',
     id: 'Dampak Kami',
